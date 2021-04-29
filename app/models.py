@@ -1,4 +1,4 @@
-from . import db,login_manager
+from . import db
 
 
 class User(db.Model):
