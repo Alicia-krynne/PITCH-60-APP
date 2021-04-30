@@ -1,13 +1,11 @@
-from flask import render_template
-from flask_login import login_required
+from flask import render_template,redirect,url_for,abort,request
+from flask_login import login_required,current_user
 from . import main
-from .forms import ReviewForm,UpdateProfile
 from .. import db,photos
-
-
+from ..models import User,Pitch,Comment,Upvote,Downvote
+from .forms import UpdateProfile,PitchForm,CommentForm
 
 # Views
-
 @main.route('/')
 def index():
     pitches = Pitch.query.all()

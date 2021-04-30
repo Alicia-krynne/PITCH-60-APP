@@ -10,7 +10,7 @@ class User(UserMixin,db.Model):
     id = db.Column(db.Integer, primary_key = True)
     username = db.Column(db.String(255),unique = True,nullable = False)
     email  = db.Column(db.String(255),unique = True,nullable = False)
-    secure_password = db.Column(db.String(255),nullable = False)
+    secure_password = db.Column(db.String(255))
     bio = db.Column(db.String(255))
     profile_pic_path = db.Column(db.String())
     pitches = db.relationship('Pitch', backref='user', lazy='dynamic')
@@ -21,11 +21,17 @@ class User(UserMixin,db.Model):
 
     @password.setter
     def password(self, password):
-        self.pass_secure = generate_password_hash(password)
+        self.secure_passwoed = generate_password_hash(password)
 
 
     def verify_password(self,password):
-        return check_password_hash(self.pass_secure,password)
+        return check_password_hash(self.secure_password,password)
+
+
+    def save_u(self):
+        db.session.add(self)
+        db.session.commit()
+
 
     def __repr__(self):
         return f'User {self.username}'
