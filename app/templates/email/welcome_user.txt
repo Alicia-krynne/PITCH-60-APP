@@ -1,0 +1,4 @@
+Hello {{user.username}}
+Welcome to Pith -60-App
+We have just seen you have signed up for our application and want to welcome you to the family. 
+Please enjoy the  reading   throu  the seveal ideas  we  can  share  for our  groups  favorite activities.
