@@ -4,18 +4,18 @@ MACRINE ALICE ADHIAMBO "ALICIA"[https://github.com/Alicia-krynne]
 
 Description
 This is a flask application that allows users to post one minute pitches and also allows other users who have signed up to comment and upvote or downvote a pitch. It also allows a person to signup to be able to access the functionalities of the application
+
 SCREENSHOTS
 
-HOME
+![HOME PAGE](window.png)
 
-PROFILE 
+![PROFILE](prettyprofile.png)
 
-PITCH 
+![Pitch](pitch2.png)
 
+![log-in-window](login.png)
 
-
-
-Cloning the repository:
+CLONNG THE  REPOSITORY:
 https://github.com/Alicia-krynne/PITCH-60-APP.git
 Move to the folder and install requirements
 cd pitch pitch-app
@@ -36,7 +36,7 @@ Technology used
 5. Heroku :  for deploying the  app 
 
 Known Bugs
-There are no known bugs currently but pull requests are allowed incase you spot a bug
+There are no known bugs currently but pull requests are allowed incase you spot a bug.
 
 Contact Information
 If you have any question or contributions, please email me at [alicakryne@outlook.com]
