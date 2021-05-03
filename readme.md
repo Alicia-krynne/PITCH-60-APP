@@ -7,13 +7,13 @@ This is a flask application that allows users to post one minute pitches and als
 
 SCREENSHOTS
 
-![HOME PAGE](window.png)
+![HOME PAGE](window.jpg)
 
-![PROFILE](prettyprofile.png)
+![PROFILE](prettyprofile.jpg)
 
-![Pitch](pitch2.png)
+![Pitch](pitch2.jpg)
 
-![log-in-window](login.png)
+![log-in-window](login.jpg)
 
 CLONNG THE  REPOSITORY:
 https://github.com/Alicia-krynne/PITCH-60-APP.git
