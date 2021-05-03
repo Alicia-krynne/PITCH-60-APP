@@ -6,20 +6,19 @@ Description
 This is a flask application that allows users to post one minute pitches and also allows other users who have signed up to comment and upvote or downvote a pitch. It also allows a person to signup to be able to access the functionalities of the application
 
 SCREENSHOTS
+![login](https://user-images.githubusercontent.com/78471467/116873724-cfca3a80-ac20-11eb-8982-3d7249d54f98.jpg)
+![pitch2](https://user-images.githubusercontent.com/78471467/116873755-deb0ed00-ac20-11eb-9f6c-708fae73ba33.jpg)
+![prettyprofile](https://user-images.githubusercontent.com/78471467/116873775-e83a5500-ac20-11eb-8db9-67b3013ccd49.jpg)
+![window](https://user-images.githubusercontent.com/78471467/116874071-5f6fe900-ac21-11eb-8230-da42ecada272.jpg)
 
-![HOME PAGE](window.jpg)
 
-![PROFILE](prettyprofile.jpg)
-
-![Pitch](pitch2.jpg)
-
-![log-in-window](login.jpg)
 
 CLONNG THE  REPOSITORY:
 https://github.com/Alicia-krynne/PITCH-60-APP.git
 Move to the folder and install requirements
 cd pitch pitch-app
 pip install -r requirements.txt (to  install dependecies)
+
 Exporting Configurations
 export SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://{User Name}:{password}@localhost/{database name}
 Running the application
