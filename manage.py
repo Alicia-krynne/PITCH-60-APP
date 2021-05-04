@@ -7,7 +7,7 @@ from  flask_migrate import Migrate, MigrateCommand
 app = create_app('production')
 manager = Manager(app)
 manager.add_command('server',Server)
-migrate = Migrate(app,db)
+#migrate = Migrate(app,db, render_as_batch=True)
 manager.add_command('db',MigrateCommand)
 
 @manager.shell
