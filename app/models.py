@@ -49,8 +49,9 @@ class Pitch(db.Model):
     category = db.Column(db.String(255), index = True,nullable = False)
     
     def save_p(self):
-        db.session.add(self)
+        db.create_all()
         db.session.commit()
+        
 
         
     
@@ -78,7 +79,7 @@ class Comment(db.Model):
     @login_manager.user_loader
 
     def __repr__(self):
-        return f'comment:{self.comment}'
+        return f'Comment:{self.comment}'
        
 
     
