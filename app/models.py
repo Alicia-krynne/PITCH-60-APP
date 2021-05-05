@@ -10,7 +10,7 @@ class User(UserMixin,db.Model):
     id = db.Column(db.Integer, primary_key = True)
     username = db.Column(db.String(255),unique = True,nullable = False)
     email  = db.Column(db.String(255),unique = True,nullable = False)
-    secure_password = db.Column(db.String(50),unique = True)
+    secure_password = db.Column(db.String(255),unique = True)
     bio = db.Column(db.String(255))
     profile_pic_path = db.Column(db.String())
     pitches = db.relationship('Pitch', backref='user', lazy='dynamic')
@@ -52,9 +52,6 @@ class Pitch(db.Model):
         db.create_all()
         db.session.commit()
         
-
-        
-    
     def __repr__(self):
         return f'Pitch {self.post}'
 
