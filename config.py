@@ -13,6 +13,7 @@ class Config:
     MAIL_USE_TLS = True
     
 class ProdConfig(Config):
+        pass
     #SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
     #DATABASE_URL='postgresql://foozzhvvhqpsgm:6e03d4d2f7a47eff5af26c93078a4136efbe5cf74c657bc33e6024653316589a@ec2-23-22-191-232.compute-1.amazonaws.com:5432/d3q6asgrmtqln1'
     #SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://macrine:Alicemacrine!@localhost/pitch'
@@ -22,7 +23,7 @@ class ProdConfig(Config):
    
 class DevConfig(Config):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://macrine:Alicemacrine!@localhost/pitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://macrine:Alicemacrine!@localhost/joonspitch'
 
 config_options = {
 'development':DevConfig,
